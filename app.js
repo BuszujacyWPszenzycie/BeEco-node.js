@@ -10,13 +10,13 @@ const app = express()
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 
-const adminData = require('./routes/admin')
+const adminRouter = require('./routes/admin')
 const trashRoutes = require('./routes/trash')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/admin', adminData.routes)
+app.use('/admin', adminRouter)
 app.use(trashRoutes)
 
 app.use(errorController.get404)

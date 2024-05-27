@@ -1,0 +1,31 @@
+<%- include('./includes/head.ejs') %>
+
+
+  <body>
+
+    <%- include('./includes/navigation.ejs') %>
+
+      <main class="main">
+        <form class="main__addForm" action="/admin/add-trash" method="POST">
+          <div class="main__addForm--item">
+            <label for="name">Nazwa odpadu: </label>
+            <input type="text" name="name" id="name" class="main__addForm--input">
+          </div>
+          <div class="main__addForm--item">
+            <label for="type">Rodzaj odpadu: </label>
+            <input type="text" name="type" id="type" class="main__addForm--input">
+          </div>
+          <div class="main__addForm--item">
+            <label for="description">Opis segregacji: </label>
+            <input type="text" name="description" id="description" class="main__addForm--input">
+          </div>
+          <button type="submit" class="main__addForm--btn">Wyślij</button>
+        </form>
+
+      </main>
+
+  </body>
+
+
+
+  </html>

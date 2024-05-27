@@ -1,0 +1,36 @@
+<%- include('./includes/head.ejs') %>
+
+  <body>
+
+    <%- include('./includes/navigation.ejs') %>
+
+      <main class="main__list">
+
+        <% if (listOfTrash.length> 0) { %>
+
+          <% for (let trashItem of listOfTrash) { %>
+
+            <div class="trash__wrapper">
+              <h2 class="trash__name trash__text">
+                <%= trashItem.name %>
+              </h2>
+              <h3 class="trash__type trash__text">
+                <%= trashItem.type %>
+              </h3>
+              <p class="trash__description trash__text">
+                <%= trashItem.description %>
+              </p>
+
+            </div>
+            <% } %>
+
+              <% } else { %>
+
+                <h1>Tu będzie lista produktów</h1>
+
+                <% } %>
+      </main>
+
+  </body>
+
+  </html>

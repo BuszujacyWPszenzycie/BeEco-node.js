@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  color: #222222;
+}
+
+.header {
+  height: 15vh;
+  width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-size: 5rem;
+  padding: 4rem;
+}
+.header__title--span {
+  color: #436850;
+}
+
+.nav {
+  font-size: 3rem;
+  padding: 4rem;
+}
+.nav__item {
+  text-decoration: none;
+  color: #222222;
+  padding: 1.3rem;
+  margin: 2rem;
+  text-transform: uppercase;
+  border: 1px solid #12372a;
+  width: 300px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  transition: color 0.4s, background-color 0.4s;
+}
+.nav__item:hover {
+  background-color: #436850;
+  color: #ffffff;
+}
+.nav__item--active {
+  background-color: #adbc9f;
+}
+
+.main {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.main__addForm {
+  margin-top: 5rem;
+  height: 400px;
+  width: 700px;
+  border: 1px solid #436850;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #12372a;
+  color: #ffffff;
+}
+.main__addForm--item {
+  height: 33.33%;
+  width: 100%;
+  font-size: 3rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.main__addForm--input {
+  height: 50px;
+  width: 200px;
+  font-size: 3rem;
+  padding: 1rem;
+  font-family: inherit;
+  transition: background-color 0.4s;
+}
+.main__addForm--input:focus {
+  outline: none;
+  background-color: #adbc9f;
+}
+.main__addForm--btn {
+  width: 300px;
+  height: 60px;
+  margin: 2rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #222222;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.main__addForm--btn:hover {
+  background-color: #adbc9f;
+}
+.main__list {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trash__wrapper {
+  width: 200px;
+  height: 200px;
+  background-color: #adbc9f;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #222222;
+}
+.trash__text {
+  padding: 2rem;
+}
+.trash__name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+.trash__type {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.trash__description {
+  font-size: 1.3rem;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
